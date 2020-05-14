@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body, .cls-18, .cls-24, .cls-28, .cls-32, .cls-37, .cls-71, .cls-74{
+    font-family: 'Montserrat', sans-serif;
+}
+.cls-1{
+    cursor: pointer;
+    transition-duration:600ms; 
+}
+
+.cls-1.active{
+    fill:green; 
+}
+
+.cls-1.not-member {
+	fill: gray;
+}
+
+.map-key {
+	position: fixed;;
+	bottom: 0;
+    left:16px;
+    width:100%;
+}
+
+.map-key ul li span{
+    background-color:green;
+    padding: 4px 16px;
+}
+
+.map-key ul li:first-child span {
+	background:gray;
+	padding: 4px 16px;
+}
+
+.map-key li {
+	margin: 0px 0px 16px;
+}
+
+.map {
+	background-image: url(images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.map::before {
+	content: "";
+	position: absolute;
+	background: rgba(255,255,255,.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.airlines li img {
+	width: 100px;
+	height: auto;
+}
+
+.airlines li {
+	margin: 0px 0px 16px;
+}
+
+.cls-7.radars {
+	position: relative;
+}
+
+.cls-7.radars {	
+	width:50px;
+	height:50px;
+	left:0;
+	top:0;
+	-webkit-animation: pulse 1.52s infinite;
+	animation: pulse 1.5s infinite;
+	transition: .51s cubic-bezier(.79,.14,.15,.86);
+}
+
+
+@keyframes pulse {
+	0% { 
+		box-shadow: 0 0 0 0 rgba(11, 113, 187, .5);
+	}
+
+	70% { 
+		box-shadow: 0 0 0 20px rgba(11, 113, 187, 0);
+	}
+	100% { 
+		box-shadow: 0 0 0 0 rgba(11, 113, 187, 0);
+	}
+}
